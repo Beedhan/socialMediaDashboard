@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+body {
+  width: 1050px;
+  margin: 30px auto;
+
+}
+.background{
+  background-color:#F8F9FE;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.mode{
+    margin-top: 1%;
+    display:flex;
+}
+
+.totalCollection{
+    display:flex;
+    margin-top: 50px;
+}
+.socialMedia{
+  min-height: 200px;
+  min-width: 240px;
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  align-items :center;
+  background-color: #F0F3FA;
+  margin-right: 50px;
+  border-radius: 5px;
+}
+.socialMedia:hover{
+ 
+  background-color: #E1E3F0;
+  cursor: pointer;
+
+}
+.socialMedia>*{
+  margin-top: 20px;
+}
+.social{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  color:#7C7F86
+}
+.social>*{
+  margin-right: 10px;
+
+}
+strong{
+  font-size: 50px;
+}
+.Followers{
+  letter-spacing:5px;
+  margin-top: 5px;
+}
+
+.todays{
+  color:green;
+  font-size:12px;
+  font-weight:bold;
+}
+.todays>img{
+  margin-bottom:3px;
+  margin-right: 3px;
+}
+
+.todaysData{
+  width:1135px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.Properties{
+  min-height: 150px;
+  min-width: 260px;
+  align-items: center;
+  background-color:#F0F3FA;
+  border-radius: 10px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+.Properties:hover{
+ 
+  background-color: #E1E3F0;
+  cursor: pointer;
+
+}
+.todaysRight{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items : center;
+  margin-left: 20px;
+  color:green;
+}
+.todaysLeft{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items : center;
+  margin-left: 15px;
+  font-weight: bold;
+}
+.todaysRight>:nth-child(2){
+  margin-top:40px;
+}
+.todaysLeft>:nth-child(2){
+  margin-top:30px;
+}
+
+
+/*Toogle button*/
+.toogleBtn{
+  background-color: #C1C1C1;
+  margin-left: 20px;
+  width:60px;
+  height: 25px;
+  border-radius:40px;
+  margin-bottom: 5px;
+}
+.toogleBtn>.circleButton{
+  display: block;
+  background-color: white;
+  height: 90%;
+  width:40%;
+  border-radius:100px;
+  margin:1px 50%;
+}
+.active{
+  background-color:#3CB6B8;
+}
+ .active>.circleButton{
+  margin:1px 10%;
+
+ }
+
+ .circleButton{
+   transition:all 0.3s
+ }
+
